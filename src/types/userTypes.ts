@@ -28,7 +28,7 @@ interface UserLocation {
   country: string;
 }
 
-export interface Coordinates {
+interface Coordinates {
   latitude: string;
   longitude: string;
 }
