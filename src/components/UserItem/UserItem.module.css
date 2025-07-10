@@ -1,0 +1,77 @@
+.userCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: transform 0.2s ease;
+}
+
+.userCard:hover {
+  transform: scale(1.02);
+}
+
+.userHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.userImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #e0e0e0;
+}
+
+.userDetails {
+  flex: 1;
+}
+
+.userDetails h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.weatherBlock {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+@media screen and (min-width: 600px) {
+  .userCard {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .userHeader {
+    flex-direction: row;
+    width: 60%;
+  }
+
+  .userDetails {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .userCard {
+    max-width: 800px;
+    margin: 1rem auto;
+  }
+
+  .userImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .userDetails h2 {
+    font-size: 1.5rem;
+  }
+}
